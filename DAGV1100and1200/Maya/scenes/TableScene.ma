@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: TableScene.ma
-//Last modified: Tue, May 20, 2025 03:42:46 PM
+//Last modified: Fri, May 30, 2025 06:49:33 PM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202504040659-cfc1e8923b";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "3AC398BD-47C8-9CFC-A463-F2B134F32B2A";
+fileInfo "UUID" "B0022DEA-4330-4C36-91EB-B1AC51B44774";
 createNode transform -s -n "persp";
 	rename -uid "BC5FBBFB-4C80-2E12-C819-B6A233BBF939";
 	setAttr ".v" no;
@@ -3611,7 +3611,7 @@ createNode mesh -n "BookshelfShape" -p "Bookshelf";
 createNode transform -n "Book";
 	rename -uid "4C5A5FA0-40C5-1A7B-206E-77A688105709";
 	setAttr ".t" -type "double3" -34.519645690917969 3.4392470791037919 4.1513881683349609 ;
-	setAttr ".r" -type "double3" -89.999995674288996 -179.99997768819966 0 ;
+	setAttr ".r" -type "double3" -89.999995674288996 -179.99997768819969 0 ;
 	setAttr ".s" -type "double3" 1 0.58465719223022461 1.3509131669998169 ;
 createNode mesh -n "BookShape" -p "Book";
 	rename -uid "7C3DC027-4C51-AE49-6113-17B9F1D1CB49";
@@ -3731,7 +3731,7 @@ createNode mesh -n "BookShape" -p "Book";
 createNode transform -n "Book2";
 	rename -uid "4EBC5CDA-4223-F95E-1726-158F626C2E34";
 	setAttr ".t" -type "double3" -34.903907775878906 8.4152609779532792 -2.9803462028503418 ;
-	setAttr ".r" -type "double3" -89.999995674288996 -179.99997768819966 0 ;
+	setAttr ".r" -type "double3" -89.999995674288996 -179.99997768819969 0 ;
 	setAttr ".s" -type "double3" 1 0.58465719223022461 1.6901446580886841 ;
 createNode mesh -n "Book2Shape" -p "Book2";
 	rename -uid "59935A1F-4735-2E49-3C9E-B49AECF23F6F";
@@ -3851,7 +3851,7 @@ createNode mesh -n "Book2Shape" -p "Book2";
 createNode transform -n "Book3";
 	rename -uid "DACF7AD5-4382-208D-3E49-98BF11A935AC";
 	setAttr ".t" -type "double3" -35.261138916015625 12.443988509386385 2.3799633979797363 ;
-	setAttr ".r" -type "double3" -2.5044796939316624e-06 -5.008956130975331e-06 -179.99997768819966 ;
+	setAttr ".r" -type "double3" -2.5044796939316624e-06 -5.008956130975331e-06 -179.99997768819969 ;
 	setAttr ".s" -type "double3" 1 0.38186544179916382 1.2908663749694824 ;
 createNode mesh -n "Book3Shape" -p "Book3";
 	rename -uid "B5AA9105-4AC8-48CD-338E-8E9AE1C6ED23";
@@ -6610,7 +6610,7 @@ createNode mesh -n "Chair6Shape" -p "Chair6";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Chair7";
 	rename -uid "48F128EF-4514-BF97-CBD3-5A87CF1CDB2F";
-	setAttr ".t" -type "double3" -0.060579776763916016 4.5172082855399491 18.237321853637695 ;
+	setAttr ".t" -type "double3" 0.50488521232281869 4.5172082855399491 18.237321853637695 ;
 	setAttr ".r" -type "double3" -90.000016164856504 -77.416744996563679 -8.5293084506099338e-06 ;
 	setAttr ".s" -type "double3" 2.4151337146759033 2.4151337146759033 0.24785596132278442 ;
 createNode mesh -n "Chair7Shape" -p "Chair7";
@@ -9855,20 +9855,20 @@ createNode mesh -n "Plate8Shape" -p "Plate8";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "15DF3965-43DB-7071-4079-9B948F0F231C";
+	rename -uid "7503F2CD-49B3-CB31-7E4B-018CFF95811E";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "16CB1CD8-43A3-15FB-FB33-2EB359FD25CE";
+	rename -uid "080B639A-41A3-C6AC-1404-8DAE51A16528";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "4A5F2888-4222-8C98-9F86-B18E5E1E6993";
+	rename -uid "76610AB1-4C3E-342E-04DC-5ABF14C7DFAF";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C0A009A9-420B-A940-A9C6-3EA6AFAA4E81";
+	rename -uid "5F4990E8-4E46-814A-71FD-47806A1ACB05";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "5310CF2E-4F95-7495-0955-6AAA4C47EFA8";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "2FB3248C-4CBC-2AC6-6797-889D56315FA7";
+	rename -uid "74A82250-46A7-2940-D305-ADA847E75FDB";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "7FA52824-46EA-60F5-0614-DB9EA19C3341";
 	setAttr ".g" yes;
