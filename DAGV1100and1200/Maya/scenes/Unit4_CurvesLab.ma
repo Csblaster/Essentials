@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit4_CurvesLab.ma
-//Last modified: Thu, Jun 05, 2025 02:04:26 PM
+//Last modified: Thu, Jun 05, 2025 02:25:49 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -12,23 +12,23 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202504040659-cfc1e8923b";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "0B7D81E6-4552-91C3-762F-9D961F1FD2D7";
+fileInfo "UUID" "0BC9CEE8-4653-4B7E-1C32-07B1F679D2DB";
 createNode transform -s -n "persp";
 	rename -uid "EA8D4C08-41BF-11B4-7D73-91B67BEF9D87";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 53.907072405603998 9.0748768995668208 -20.012081406726423 ;
-	setAttr ".r" -type "double3" -6.1541767405670669 110.29360408937944 0 ;
+	setAttr ".t" -type "double3" -49.172212041699517 1.7348052314251392 -13.167682447216617 ;
+	setAttr ".r" -type "double3" 4.0458232580958553 -2264.9063959082546 0 ;
 	setAttr ".rp" -type "double3" 1.1934897514720433e-15 1.9984014443252818e-15 -7.1054273576010019e-15 ;
 	setAttr ".rpt" -type "double3" -5.6040458436739319e-15 -3.9039145516825235e-15 2.1454149444676607e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "37A04370-4381-2F74-180D-B8B7509B9348";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 57.807804359634474;
+	setAttr ".coi" 51.011737308693398;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0 2.8776356085106043 -0.078090589048476655 ;
+	setAttr ".tp" -type "double3" 0 5.333901112866946 -0.078090589048476655 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "7C8168F5-4AA0-FAF0-98F0-BDB976A86823";
@@ -117,6 +117,7 @@ createNode mesh -n "revolvedSurfaceShape1" -p "revolvedSurface1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.23076923191547394 0.125 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 125 ".uvst[0].uvsp[0:124]" -type "float2" 0 0 0.46153846 1
 		 0.46153846 0.5 0 0.5 0.23076923 0 0.23076923 0.5 0.23076923 0.25 0 0.25 0.07692308
@@ -184,12 +185,12 @@ createNode mesh -n "revolvedSurfaceShape1" -p "revolvedSurface1";
 	setAttr -s 208 ".ed";
 	setAttr ".ed[0:165]"  103 77 1 77 104 1 104 103 1 54 1 1 1 27 1 27 55 1 55 54 1
 		 32 2 1 2 34 1 34 33 1 33 32 1 19 5 1 5 21 1 21 20 1 20 19 1 12 6 1 6 15 1 15 14 1
-		 14 12 1 10 9 1 9 7 1 7 11 1 11 10 1 0 8 1 8 10 1 11 0 1 13 4 1 4 12 1 14 13 1 8 13 1
-		 14 10 1 15 9 1 16 3 1 3 17 1 17 18 1 18 16 1 17 7 1 9 18 1 6 19 1 20 15 1 20 18 1
+		 14 12 1 10 9 1 9 7 1 7 11 0 11 10 1 0 8 1 8 10 1 11 0 0 13 4 1 4 12 1 14 13 1 8 13 1
+		 14 10 1 15 9 1 16 3 1 3 17 0 17 18 1 18 16 1 17 7 0 9 18 1 6 19 1 20 15 1 20 18 1
 		 21 16 1 26 22 1 22 29 1 29 28 1 28 26 1 25 24 1 24 6 1 12 25 1 4 23 1 23 25 1 1 26 1
 		 28 27 1 23 27 1 28 25 1 29 24 1 30 5 1 19 31 1 31 30 1 24 31 1 22 32 1 33 29 1 33 31 1
-		 34 30 1 13 46 1 46 45 1 45 4 1 40 36 1 36 42 1 42 41 1 41 40 1 35 38 1 38 39 1 39 37 1
-		 37 35 1 38 3 1 16 39 1 5 40 1 41 21 1 41 39 1 42 37 1 0 43 1 43 44 1 44 8 1 43 35 1
+		 34 30 1 13 46 1 46 45 1 45 4 1 40 36 1 36 42 1 42 41 1 41 40 1 35 38 0 38 39 1 39 37 1
+		 37 35 1 38 3 0 16 39 1 5 40 1 41 21 1 41 39 1 42 37 1 0 43 0 43 44 1 44 8 1 43 35 0
 		 37 44 1 36 45 1 46 42 1 46 44 1 50 47 1 47 52 1 52 51 1 51 50 1 48 36 1 40 49 1 49 48 1
 		 30 49 1 2 50 1 51 34 1 51 49 1 52 48 1 45 53 1 53 23 1 48 53 1 47 54 1 55 52 1 55 53 1
 		 103 85 1 85 84 1 84 103 1 68 57 1 57 70 1 70 69 1 69 68 1 62 58 1 58 65 1 65 64 1
