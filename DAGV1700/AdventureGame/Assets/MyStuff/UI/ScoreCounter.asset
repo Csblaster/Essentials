@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d4e5cd1a0b1d74cb9c2de1b92a8271, type: 3}
   m_Name: ScoreCounter
   m_EditorClassIdentifier: 
-  value: 1
+  value: 4
   OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  threshold: 1
+  OnThresholdReached:
     m_PersistentCalls:
       m_Calls: []
